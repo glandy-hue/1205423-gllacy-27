@@ -41,74 +41,126 @@
       <section>
         <h2>Фильтр поиска</h2>
         <form action="https://echo.htmlacademy.ru/" method="get">
-        <ul>
-          <li>
-            <p>Сортировка:</p>
-            <p>
-              <select name="sorting[]">
-                <option>По популярности</option>
-                <option>Сначала недорогие</option>
-                <option>Сначала дорогие</option>
-                <option>По жирности</option>
-              </select>
-            </p>
-          </li>
-          <li>
-            <p>Цена: 100 руб. - 500 руб.</p>
-            <div class="range-body">
-              <div class="track"></div>
-              <div class="slider-1"></div>
-              <div class="slider-2"></div>
-            </div>
-          </li>
-          <li>
-            <p>Жирность:</p>
-            <ul>
-              <li>
-                <input id="fat-value-1" type="radio" name="fat" value="0%">
-                <label for="fat-value-1">0%</label>
-              </li>
-              <li>
-                <input id="fat-value-2" type="radio" name="fat" value="До 10%">
-                <label for="fat-value-2">До 10%</label>
-              </li>
-              <li>
-                <input id="fat-value-3" type="radio" name="fat" value="До 30%">
-                <label for="fat-value-3">До 30%</label>
-              </li>
-              <li>
-                <input id="fat-value-4" type="radio" name="fat" value="Выше 30%">
-                <label for="fat-value-4">Выше 30%</label>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <p>Наполнители</p>
-            <ul>
-              <li><input id="chocolate" type="checkbox" name="chocolate-filler"><label for="chocolate">Шоколадные</label></li>
-              <li><input id="sugar" type="checkbox" name="sugar-powder"><label for="sugar">Сахарные присыпки</label></li>
-              <li><input id="fruits" type="checkbox" name="fruits-filler"><label for="fruits">Фрукты</label></li>
-              <li><input id="syrups" type="checkbox" name="syrup"><label for="syrups">Сиропы</label></li>
-              <li><input id="Jams" type="checkbox" name="Jam"><label for="Jams">Джемы</label></li>
-          </li>
-        </ul>
-
-        <p>Наполнители:</p>
-
-        <ul>
-          <li>Шоколадные</li>
-          <li>Сахарные присыпки</li>
-          <li>Фрукты</li>
-          <li>Сиропы</li>
-          <li>Джемы</li>
-        </ul>
-        <!--Здесь должна быть кнопка button-->
-        <a href="">Применить</a>
+          <ul>
+            <li>
+              <p>Сортировка:</p>
+              <p>
+                <select name="sorting[]">
+                  <option>По популярности</option>
+                  <option>Сначала недорогие</option>
+                  <option>Сначала дорогие</option>
+                  <option>По жирности</option>
+                </select>
+              </p>
+            </li>
+            <li>
+              <p>Цена: 100 руб. - 500 руб.</p>
+              <div class="range-body">
+                <div class="track"></div>
+                <div class="slider-1"></div>
+                <div class="slider-2"></div>
+              </div>
+            </li>
+            <li>
+              <p>Жирность:</p>
+              <ul>
+                <li>
+                  <input id="fat-value-1" type="radio" name="fat" value="0%">
+                  <label for="fat-value-1">0%</label>
+                </li>
+                <li>
+                  <input id="fat-value-2" type="radio" name="fat" value="До 10%">
+                  <label for="fat-value-2">До 10%</label>
+                </li>
+                <li>
+                  <input id="fat-value-3" type="radio" name="fat" value="До 30%">
+                  <label for="fat-value-3">До 30%</label>
+                </li>
+                <li>
+                  <input id="fat-value-4" type="radio" name="fat" value="Выше 30%">
+                  <label for="fat-value-4">Выше 30%</label>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p>Наполнители</p>
+              <ul>
+                <li><input id="chocolate" type="checkbox" name="chocolate-filler"><label for="chocolate">Шоколадные</label></li>
+                <li><input id="sugar" type="checkbox" name="sugar-powder"><label for="sugar">Сахарные присыпки</label></li>
+                <li><input id="fruits" type="checkbox" name="fruits-filler"><label for="fruits">Фрукты</label></li>
+                <li><input id="syrups" type="checkbox" name="syrup"><label for="syrups">Сиропы</label></li>
+                <li><input id="Jams" type="checkbox" name="Jam"><label for="Jams">Джемы</label></li>
+              </ul>
+            </li>
+          </ul>
+          <button type="submit">Применить</a>
+        </form>
       </section>
 
       <section>
         <h2>Виды сливочного мороженого</h2>
-
+        <ul>
+          <li>
+            <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+            <p><img src="" width="" height="" alt=""></p>
+            <p><span>310₽</span>/кг</p>
+          </li>
+          <li>
+            <p>Сливочно-кофейное с кусочками шоколада</p>
+            <p><img src="" width="" height="" alt=""></p>
+            <p><span>380₽</span>/кг</p>
+          </li>
+          <li>
+            <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+            <p><img src="" width="" height="" alt=""></p>
+            <p><span>355₽</span>/кг</p>
+          </li>
+          <li>
+            <p>Сливочное крем-брюле с карамельной подливкой</p>
+            <p><img src="" width="" height="" alt=""></p>
+            <p><span>415₽</span>/кг</p>
+          </li>
+          <li>
+            <p>Сливочное с брусничным джемом</p>
+            <p><img src="" width="" height="" alt=""></p>
+            <p><span>325₽</span>/кг</p>
+          </li>
+          <li>
+            <p>Сливочно-черничное с цельными ягодами черники</p>
+            <p><img src="" width="" height="" alt=""></p>
+            <p><span>410₽</span>/кг</p>
+          </li>
+          <li>
+            <p>Сливочно-лимонное с карамельной присыпкой</p>
+            <p><img src="" width="" height="" alt=""></p>
+            <p><span>375₽</span>/кг</p>
+          </li>
+          <li>
+            <p>Сливочное с шоколадной стружкой</p>
+            <p><img src="" width="" height="" alt=""></p>
+            <p><span>320₽</span>/кг</p>
+          </li>
+          <li>
+            <p>Сливочно-ванильное с кусочками шоколада</p>
+            <p><img src="" width="" height="" alt=""></p>
+            <p><span>440₽</span>/кг</p>
+          </li>
+          <li>
+            <p>Сливочноe с ментоловым сиропом</p>
+            <p><img src="" width="" height="" alt=""></p>
+            <p><span>435₽</span>/кг</p>
+          </li>
+          <li>
+            <p>Сливочное с кусочками черного шоколада</p>
+            <p><img src="" width="" height="" alt=""></p>
+            <p><span>355₽</span>/кг</p>
+          </li>
+          <li>
+            <p>Сливочное с мятным сиропом</p>
+            <p><img src="" width="" height="" alt=""></p>
+            <p><span>420</span>/кг</p>
+          </li>
+        </ul>
 
       </section>
 
