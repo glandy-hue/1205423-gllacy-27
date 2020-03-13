@@ -28,6 +28,14 @@
        url('../fonts/roboto-v20-cyrillic-ext_latin-ext-700.woff') format('woff');
 }
 
+a {
+  text-decoration: none;
+}
+
+svg {
+  fill: #ffffff;
+}
+
 body {
   width: 1200px;
   margin: 0 auto;
@@ -40,4 +48,35 @@ body {
   color: #ffffff;
 
   background-color: #849d8f;
+}
+
+.navigation {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: 700;
+  color: inherit;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.navigation-nested-list {
+  display: none;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.search-container {
+  background-color: rgba(255, 255, 255, 0.4);
 }
