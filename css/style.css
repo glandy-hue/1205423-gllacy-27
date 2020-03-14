@@ -36,6 +36,15 @@ svg {
   fill: #ffffff;
 }
 
+input,
+textarea {
+  border: 1px solid #d3d3d2;
+}
+
+button {
+  padding: 0;
+}
+
 body {
   width: 1146px;
   margin: 0 auto;
@@ -43,8 +52,8 @@ body {
 
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
-  font-weight: 400;
   line-height: 18px;
+  font-weight: 400;
   color: #ffffff;
 
   background-color: #849d8f;
@@ -100,7 +109,15 @@ body {
 }
 
 .users-bttn-list-item {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+
   background-color: rgba(255, 255, 255, 0.4);
+}
+
+.users-bttn-list-item a {
+  color: inherit;
 }
 
 .header-contacts {
@@ -184,8 +201,6 @@ body {
 }
 
 .product-card img {
-  position: relative;
-
   border-radius: 50%;
 }
 
@@ -337,4 +352,298 @@ body {
   color: inherit;
 }
 
-.
+.map {
+  width: 1200px;
+  margin-left: -27px;
+}
+
+.address-information {
+  font-size: 14px;
+  line-height: 20px;
+  color: #323232;
+
+  background-color: #ffffff;
+}
+
+.address-information a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+
+  background-color: #e95138;
+}
+
+.address-contacts span {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.tel-contacts span {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.enter-the-login {
+  display: none;
+
+  font-size: 13px;
+  line-height: 24px;
+  color: #323232;
+
+  background-color: #f8f7f4;
+}
+
+.login-form a {
+  color: inherit;
+}
+
+.login-form button {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+
+  background-color: #e95138;
+  border: none;
+}
+
+.login-input-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.login-input-list-item input {
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+}
+
+.feedback {
+  display: none;
+
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #323232;
+
+  background-color: #f8f7f4;
+}
+
+.feedback-input-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.feedback-input-list-item input,
+.feedback-input-list-item textarea {
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+}
+
+.feedback-form button {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+
+  border: none;
+  background-color: #e95138;
+}
+
+.close-button {
+  line-height: 0;
+
+  border: none;
+  background-color: transparent;
+}
+
+.search-on-gllacy {
+  display: none;
+
+  background-color: #f8f7f4;
+}
+
+.search-form input {
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+}
+
+.social-contacts-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.social-contacts-list-item a {
+  display: inline-block;
+
+  line-height: 0;
+
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.social-contacts-list-item svg {
+  fill: rgba(255, 255, 255, 0.8);
+}
+
+.main-footer {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: inherit;
+}
+
+.legal-information-list {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+
+  list-style: none;
+}
+
+.legal-information-list::before {
+  position: absolute;
+  top: 2px;
+  left: 0;
+
+  width: 15px;
+  height: 13px;
+
+  content: url("../img/heart-icon.svg");
+}
+
+.legal-information-list-item:first-child {
+  font-weight: 700;
+}
+
+.legal-information-list-item a {
+  color: inherit;
+}
+
+.quality-information-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.quality-information-list-item a {
+  color: inherit;
+}
+
+/*Стилизация страницы каталога сливочного мороженого*/
+
+.navigation-list-item-in-catalog {
+  background-color: #d07058;
+}
+
+.users-bttn-list-item-in-catalog {
+  color: #323232;
+  background-color: #f8f7f4;
+}
+
+.users-bttn-list-item-in-catalog svg {
+  fill: #000000;
+}
+
+.users-bttn-list-item-in-catalog .center-of-shoping-cart {
+  fill: #ff0000;
+}
+
+.inner-heading {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+}
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 16px;
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: inherit;
+}
+
+.filtr-list {
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  list-style: none;
+}
+
+.filtr-list-item {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.sorting {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+
+  background-color: transparent;
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  border: none;
+
+  -moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+
+.different-fat,
+.different-fillers {
+  margin: 0;
+  padding: 0;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  list-style: none;
+}
+
+.filtr-form button {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: inherit;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid #ffffff;
+}
+
+.pagination {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.pagination a {
+  display: block;
+  color: inherit;
+}
+
+.current-pagination {
+  color: #000000;
+}
