@@ -37,13 +37,13 @@ svg {
 }
 
 body {
-  width: 1200px;
+  width: 1146px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 27px;
 
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 18px;
   color: #ffffff;
 
@@ -144,13 +144,13 @@ body {
 }
 
 .special-promotion-list-item:first-child {
-  /*background-color: */
+  background-color: #841a3d;
   background-image: url("../img/raspberry-background.jpg");
   background-repeat: no-repeat;
 }
 
 .special-promotion-list-item:last-child {
-  /*background-color: */
+  background-color: #5e3924;
   background-image: url("../img/chocolate-background.jpg");
   background-repeat: no-repeat;
 }
@@ -176,3 +176,165 @@ body {
   font-size: 18px;
   line-height: 22px;
 }
+
+.product-heading {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.product-card img {
+  position: relative;
+
+  border-radius: 50%;
+}
+
+.product-card a {
+  /*display: none;*/
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: inherit;
+
+  background-color: #e84e37;
+}
+
+.product-image {
+  position: relative;
+}
+
+.product-image::before {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+
+  display: block;
+  width: 61px;
+  height: 61px;
+
+  content: url("../img/hit-icon.svg");
+}
+
+.product-price {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.product-price span {
+  font-size: 45px;
+}
+
+.gllacy-is {
+  font-size: inherit;
+  line-height: 22px;
+  font-weight: inherit;
+  color: #323232;
+
+  background-color: #eee2c8;
+  background-image: url("../img/waffle-background.jpg");
+  background-repeat: repeat-x;
+}
+
+.about-gllacy {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.advantages-list-item:first-child::before {
+  display: inline-block;
+  width: 49px;
+  height: 49px;
+
+  vertical-align: middle;
+
+  content: url("../img/ice-cream-icon.svg");
+}
+
+.advantages-list-item:nth-child(2)::before {
+  display: inline-block;
+  width: 49px;
+  height: 49px;
+
+  vertical-align: middle;
+
+  content: url("../img/cow-icon.svg");
+}
+
+.advantages-list-item:nth-child(3)::before {
+  display: inline-block;
+  width: 49px;
+  height: 49px;
+
+  vertical-align: middle;
+
+  content: url("../img/leaf-icon.svg");
+}
+
+.advantages-list-item:last-child::before {
+  display: inline-block;
+  width: 49px;
+  height: 49px;
+
+  vertical-align: middle;
+
+  content: url("../img/thermometer-icon.svg");
+}
+
+.gllacy-blog {
+  font-size: inherit;
+  line-height: 22px;
+  font-weight: inherit;
+  color: #323232;
+}
+
+.gllacy-news {
+  background-color: #ffffff;
+  background-image: url("../img/strawberry-background.jpg");
+  background-repeat: no-repeat;
+}
+
+.blog-post {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.blog-post a {
+  color: inherit;
+}
+
+.email-delivery {
+  background-color: #f8f7f4;
+}
+
+.about-email-delivery {
+  font-size: inherit;
+  line-height: 22px;
+}
+
+.email-delivery-form button {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+
+  background-color: #e95138;
+  border: none;
+}
+
+.email-delivery-form input {
+  font-size: inherit;
+  line-height: 24px;
+  color: inherit;
+}
+
+.
