@@ -130,7 +130,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-left: auto;
-  margin-top: 12px;
+  margin-top: 14px;
   margin-right: 10px;
   width: 33px;
   height: 33px;
@@ -680,42 +680,84 @@ body {
 
 .enter-the-login {
   display: none;
+  box-sizing: border-box;
+  width: 277px;
+  padding-top: 20px;
+  padding-right: 17px;
+  padding-bottom: 22px;
+  padding-left: 19px;
 
   font-size: 13px;
   line-height: 24px;
   color: #323232;
 
+  border-radius: 5px;
   background-color: #f8f7f4;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .login-form a {
   color: inherit;
 }
 
+.login-form a:not(:last-child) {
+  margin-bottom: -3px;
+}
+
 .login-form button {
+  padding: 10px 25px;
+  margin-right: 20px;
+
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
 
   background-color: #e95138;
   border: none;
+  border-radius: 20px;
+}
+
+.login-form p {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-top: -2px;
+  min-width: 121px;
 }
 
 .login-input-list {
   margin: 0;
   padding: 0;
+  margin-bottom: 20px;
 
   list-style: none;
 }
 
+.login-input-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .login-input-list-item input {
+  box-sizing: border-box;
+  width: 241px;
+  min-height: 44px;
+  padding: 0;
+
   font-size: 14px;
   line-height: 24px;
   color: #999999;
+
+  border-radius: 5px;
 }
 
 .feedback {
-  display: none;
+  /*display: none;*/
 
   font-size: 24px;
   line-height: 28px;
@@ -723,6 +765,10 @@ body {
   color: #323232;
 
   background-color: #f8f7f4;
+}
+
+.feedback-subheading {
+  margin: 0;
 }
 
 .feedback-input-list {
