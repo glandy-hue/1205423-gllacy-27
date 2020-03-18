@@ -70,6 +70,7 @@ body {
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap; /* added line */
 }
+
 /*
 .main-header {
   display: flex;
@@ -113,7 +114,7 @@ body {
 }
 
 .navigation-list-item:not(:last-child) {
-  margin-right: 29px;
+  margin-right: 27px;
 }
 
 .navigation-nested-list {
@@ -130,7 +131,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-left: auto;
-  margin-top: 14px;
+  margin-top: 13px;
   margin-right: 10px;
   width: 33px;
   height: 33px;
@@ -155,7 +156,7 @@ body {
 
 .users-bttn-list-item {
   padding-top: 6px;
-  padding-right: 20px;
+  padding-right: 21px;
   padding-bottom: 7px;
   padding-left: 16px;
 
@@ -168,10 +169,7 @@ body {
 }
 
 .users-bttn-list-item:last-child {
-  padding-top: 6px;
-  padding-right: 17px;
   padding-bottom: 6px;
-  padding-left: 20px;
 }
 
 .users-bttn-list-item:not(:last-child) {
@@ -221,6 +219,11 @@ body {
   text-align: center;
   list-style: none;
 }
+
+.slider-list p {
+  margin: 0;
+}
+
 
 .slider-list-item > a {
   position: absolute;
@@ -440,6 +443,8 @@ body {
 .gllacy-is {
   padding-top: 25px;
   padding-left: 20px;
+  padding-bottom: 24px;
+  padding-right: 26px;
 
   font-size: inherit;
   line-height: 22px;
@@ -474,6 +479,10 @@ body {
   flex-direction: row;
   width: 535px;
   padding-top: 21px;
+}
+
+.advantages-list-item:first-child {
+  margin-bottom: 1px;
 }
 
 .advantages-list-item:nth-child(odd) {
@@ -733,8 +742,9 @@ body {
 
 .login-input-list {
   margin: 0;
-  padding: 0;
   margin-bottom: 20px;
+  padding: 0;
+  width: 100%;
 
   list-style: none;
 }
@@ -757,45 +767,89 @@ body {
 }
 
 .feedback {
-  /*display: none;*/
+  position: relative;
+
+  display: none;
+  width: 429px;
+  padding-top: 15px;
+  padding-left: 23px;
+  padding-right: 25px;
+  padding-bottom: 27px;
 
   font-size: 24px;
   line-height: 28px;
   font-weight: 500;
   color: #323232;
 
+  border-radius: 10px;
   background-color: #f8f7f4;
 }
 
 .feedback-subheading {
+  max-width: 410px;
+
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .feedback-input-list {
   margin: 0;
+  margin-bottom: 25px;
   padding: 0;
 
   list-style: none;
 }
 
+.feedback-input-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.feedback-input-list-item input {
+  padding: 0;
+  width: 265px;
+  height: 42px;
+}
+
+.feedback-input-list-item textarea {
+  box-sizing: border-box;
+  padding: 0;
+  min-height: 155px;
+  width: 100%;
+}
+
 .feedback-input-list-item input,
 .feedback-input-list-item textarea {
+  border-radius: 5px;
+
   font-size: 16px;
   line-height: 24px;
   color: #999999;
 }
 
-.feedback-form button {
+.feedback-form {
+  padding-left: 1px;
+}
+
+.feedback-form button[type="submit"] {
+  display: block;
+  padding: 10px 24px;
+  margin-left: auto;
+
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   color: #ffffff;
 
   border: none;
+  border-radius: 21px;
   background-color: #e95138;
 }
 
 .close-button {
+  position: absolute;
+  top: 15px;
+  right: 16px;
+
   line-height: 17px;
 
   border: none;
@@ -809,14 +863,23 @@ body {
 
 .search-on-gllacy {
   display: none;
+  width: 311px;
+  padding: 20px 15px;
 
   background-color: #f8f7f4;
+  border-radius: 5px;
 }
 
 .search-form input {
+  width: 309px;
+  height: 42px;
+  padding: 0;
+
   font-size: 14px;
   line-height: 24px;
   color: #999999;
+
+  border-radius: 5px;
 }
 
 .social-contacts-list {
