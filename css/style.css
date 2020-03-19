@@ -49,7 +49,7 @@ body {
   width: 1146px;
   margin: 0 auto;
   padding: 0 27px;
-  padding-top: 10px;
+  padding-top: 9px;
 
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
@@ -71,18 +71,11 @@ body {
   white-space: nowrap; /* added line */
 }
 
-/*
-.main-header {
-  display: flex;
-  flex-direction: wrap;
-}
-*/
-
 .main-header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .shop-logo {
@@ -90,7 +83,9 @@ body {
 }
 
 .main-navigation {
-  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
   font-size: inherit;
   line-height: inherit;
@@ -106,15 +101,17 @@ body {
 .navigation-list {
   display: flex;
   flex-direction: row;
+  align-items: center;
   width: 700px;
   margin: 0;
+  margin-top: -5px;
   padding: 0;
 
   list-style: none;
 }
 
 .navigation-list-item:not(:last-child) {
-  margin-right: 27px;
+  margin-right: 28px;
 }
 
 .navigation-nested-list {
@@ -130,8 +127,8 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-top: -6px;
   margin-left: auto;
-  margin-top: 13px;
   margin-right: 10px;
   width: 33px;
   height: 33px;
@@ -148,7 +145,7 @@ body {
   display: flex;
   flex-direction: row;
   margin: 0;
-  margin-top: 14px;
+  margin-top: -4px;
   padding: 0;
 
   list-style: none;
@@ -156,9 +153,9 @@ body {
 
 .users-bttn-list-item {
   padding-top: 6px;
-  padding-right: 21px;
   padding-bottom: 7px;
   padding-left: 16px;
+  padding-right: 20px;
 
   font-size: 14px;
   line-height: 16px;
@@ -205,13 +202,12 @@ body {
 }
 
 .best-choice {
-  position: relative;
-
-  margin-top: -90px;
+  margin-top: -33px;
 }
 
 .slider-list {
   margin: 0;
+  margin-bottom: 17px;
   padding: 0;
 
   font-size: 60px;
@@ -226,14 +222,11 @@ body {
 
 
 .slider-list-item > a {
-  position: absolute;
-  top: 459px;
-  left: 434px;
-
   padding-top: 10px;
   padding-right: 43px;
   padding-bottom: 10px;
   padding-left: 41px;
+  order: 2;
 
   font-size: 32px;
   line-height: 44px;
@@ -245,26 +238,24 @@ body {
 }
 
 .slider-list-item {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .slider-heading {
-  position: absolute;
-  top: 314px;
-
   margin: 0;
+  margin-top: -282px;
+  margin-bottom: 30px;
   padding: 0;
-
+  order: 1;
+  width: 670px;
 
   font-size: 60px;
   line-height: 60px;
 }
 
 .slider-change {
-  position: absolute;
-  top: 479px;
-  left: 0;
-
   width: 19px;
   height: 19px;
 
@@ -999,8 +990,32 @@ body {
 
 /*Стилизация страницы каталога сливочного мороженого*/
 
-.navigation-list-item-in-catalog {
+.shop-logo-in-catalog {
+  margin-right: 10px;
+}
+
+.navigation-list-in-catalog {
+  margin-top: -7px;
+}
+
+.navigation-list-item-in-catalog:not(:last-child) {
+  margin-right: 15px;
+}
+
+.navigation-list-item:nth-child(2) {
+  margin-right: 30px;
+}
+
+.current-navigation-list-item-in-catalog {
+  padding: 7px 14px;
+  padding-right: 13px;
+
+  border-radius: 15px;
   background-color: #d07058;
+}
+
+.users-bttn-list-in-catalog {
+  margin-top: -7px;
 }
 
 .users-bttn-list-item-in-catalog {
@@ -1014,6 +1029,10 @@ body {
 
 .users-bttn-list-item-in-catalog .center-of-shoping-cart {
   fill: #ff0000;
+}
+
+.header-contacts-in-catalog {
+  margin-top: -4px;
 }
 
 .inner-heading {
