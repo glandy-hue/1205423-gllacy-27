@@ -1035,7 +1035,15 @@ body {
   margin-top: -4px;
 }
 
-.inner-heading {
+.main-in-catalog {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-heading {
+  margin-top: 4px;
+  margin-bottom: 26px;
+
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
@@ -1043,7 +1051,13 @@ body {
 
 .breadcrumbs {
   margin: 0;
+  margin-top: -17px;
   padding: 0;
+  order: -1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 573px;
 
   font-size: 14px;
   line-height: 16px;
@@ -1052,6 +1066,18 @@ body {
 
 .breadcrumbs a {
   color: inherit;
+}
+
+.breadcrumbs-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  content: "»";
+}
+
+.breadcrumbs-item:not(:last-child) a {
+  margin-right: 8px;
 }
 
 .filtr-list {
@@ -1065,16 +1091,29 @@ body {
 }
 
 .filtr-list-item {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
 }
 
-.sorting {
+.paragraph-sorting {
+  margin: 0;
+  margin-left: 17px;
+  margin-bottom: 7px;
+}
+
+.select-sorting {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 11px;
+  padding-right: 30px;
+
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   color: #ffffff;
+  text-transform: lowercase;
 
-  background-color: transparent;
+  border-radius: 18px;
+  background-color: rgba(255, 255, 255, 0.5);
   background-image: url("../img/icon-down-dir.svg");
   background-repeat: no-repeat;
   background-position: right;
@@ -1083,6 +1122,12 @@ body {
   -moz-appearance: none;
 	-webkit-appearance: none;
 	appearance: none;
+}
+
+.select-sorting option {
+  text-transform: lowercase;
+
+  color: #323232;
 }
 
 
