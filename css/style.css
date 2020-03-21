@@ -347,10 +347,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-}
-
-.product-card:not(:last-of-type) {
-  margin-right: 26px;
+  justify-content: space-between;
 }
 
 .product-card {
@@ -359,17 +356,19 @@ body {
   display: flex;
   flex-direction: column;
   width: 267px;
-  margin-bottom: 40px;
+  min-height: 362px;
 }
 
 .product-heading {
-  margin-bottom: 0;
+  margin: 0;
+  margin-top: 9px;
   order: 2;
 
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
   text-align: center;
+  align-self: center;
 }
 
 .product-card img {
@@ -1080,6 +1079,14 @@ body {
   margin-right: 8px;
 }
 
+.breadcrumbs-item:nth-child(2) {
+  margin-right: 5px;
+}
+
+.search-filtr {
+  margin-bottom: 40px;
+}
+
 .filtr-list {
   display: flex;
   flex-direction: row;
@@ -1298,6 +1305,10 @@ body {
   margin-left: 16px;
 }
 
+.fillers-item {
+  margin-right: 14px;
+}
+
 .different-fillers {
   padding: 8px;
   padding-left: 16px;
@@ -1339,7 +1350,13 @@ body {
   content: url("../img/checkbox-on.svg");
 }
 
+.button-item {
+  align-self: flex-end;
+}
+
 .filtr-form button {
+  padding: 7px 27px;
+
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -1347,11 +1364,37 @@ body {
 
   background-color: rgba(255, 255, 255, 0.5);
   border: 2px solid #ffffff;
+  border-radius: 18px;
+}
+
+.product-in-catalog {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 42px;
+}
+
+.product-card:nth-of-type(9) .product-heading,
+.product-card:nth-of-type(5) .product-heading {
+  width: 258px;
+}
+
+.product-image-in-catalog {
+  margin: 0;
 }
 
 .pagination {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+  min-width: 189px;
+
+
+  font-weight: 500;
+  color: #ffffff;
 
   list-style: none;
 }
@@ -1361,6 +1404,40 @@ body {
   color: inherit;
 }
 
-.current-pagination {
+.pagination li {
+  width: 27px;
+  height: 26px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.pagination li:first-child {
+
+}
+
+.pagination li:nth-child(3) {
+
+}
+
+.pagination li:nth-child(4) {
+
+}
+
+.pagination li:nth-child(5) {
+
+}
+
+.pagination li:nth-child(6) {
+  width: 33px;
+}
+
+li.current-pagination {
+  justify-content: center;
+
   color: #000000;
+
+  border-radius: 50%;
+  background-color: #ffffff;
 }
